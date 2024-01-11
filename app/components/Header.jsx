@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import styles from './Header.module.css'; // Import the styles
+import Image from 'next/image';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +13,14 @@ const Header = () => {
         <header className={styles.header}>
             <div className={styles.logo}>
                 {/* Replace with your actual logo */}
-                <img src="/path-to-your-logo.png" alt="Logo" className={styles.logoImage} />
-            </div>
+                <Image 
+                    src="/Holiday Travel Suitcase Illustration Logo Design.png" // Adjust the path as needed
+                    alt="Logo" 
+                    className={styles.logoImage}
+                    width={150}
+                    height={150} // Set the height as needed
+                    layout="fill" // Can be 'fixed', 'responsive', 'intrinsic', or 'fill'
+                />            </div>
             <div className={styles.menu}>
                 <button onClick={toggleDropdown} className={styles.dropdownButton}>
                     Check Our Destinations 
