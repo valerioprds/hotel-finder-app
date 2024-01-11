@@ -5,14 +5,13 @@
 /* base styles */
 body {
 	background: #ebf0fa;
-	
 }
 h1,
 h2 {
 	@apply font-bold text-primary text-lg;
 }
 main {
-    margin: 100px
+	margin: 100px;
 }
 main > h2 {
 	@apply mb-4 pb-2 text-base;
@@ -94,22 +93,6 @@ form button {
     my-4 mx-auto;
 }
 
-/* card styles */
-.card {
-	@apply bg-white 
-    shadow-sm 
-    rounded-md 
-    py-3 px-4 my-4 
-    relative 
-    overflow-hidden;
-}
-.card h3 {
-	@apply font-bold text-gray-700 text-sm 
-    mb-0;
-}
-.card p {
-	@apply my-4 text-sm leading-6;
-}
 
 /* pill styles */
 .pill {
