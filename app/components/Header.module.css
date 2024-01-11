@@ -1,44 +1,45 @@
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 20px;
-	background-color: #003580; /* Booking.com's iconic blue */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #003b95; /* Booking.com's iconic blue */
+    width: 100%;
 }
 
 .logo {
-	flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .logoImage {
-	height: 40px; /* Adjust as needed */
+    height: 120px; /* Adjust as needed */
 }
 
 .menu {
-	position: relative;
+    position: relative;
 }
 
 .dropdownButton {
-	padding: 10px 20px;
-	background-color: #fff;
-	color: #003580;
-	border: none;
-	cursor: pointer;
-	border-radius: 5px;
-	font-size: 16px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #003580;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 .dropdownContent {
-	position: absolute;
-	right: 0;
-	background-color: #fff;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z-index: 1;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdownItem {
-	display: block;
-	padding: 12px 20px;
-	color: #003580;
-	text-decoration: none;
+    display: block;
+    padding: 12px 20px;
+    color: #003580;
+    text-decoration: none;
 }
