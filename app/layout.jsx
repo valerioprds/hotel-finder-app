@@ -3,7 +3,8 @@ import { Rubik } from "next/font/google";
 
 // components
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Header";
+import Header from "./components/Header";
 
 
 const rubik = Rubik({ subsets: ["latin"] });
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={rubik.className}>
-				<Navbar />
+				<Header />
 				{children}
 			</body>
 		</html>
