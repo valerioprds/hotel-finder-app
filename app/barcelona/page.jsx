@@ -5,6 +5,10 @@ import styles from "./BarcelonaComponent.module.css";
 //icons
 import LocationCityOutlinedIcon from "@mui/icons-material/LocationCityOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
+
+//buttons
+import Button from "@mui/material/Button";
 
 export default function HotelsList() {
 	const [hotels, setHotels] = useState([]);
@@ -43,10 +47,11 @@ export default function HotelsList() {
 			<div className="container mx-auto">
 				<h2 className="font-bold text-2xl mb-4">Hotels in Barcelona</h2>
 				<div className="flex flex-col">
+					{/* aqui estan las cards */}
 					{hotels.map((hotel, index) => (
 						<div
 							key={index}
-							className="mb-4 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row"
+							className=" mb-4 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row"
 						>
 							<div className="relative h-64 md:h-auto md:w-1/5">
 								<Image
@@ -67,22 +72,22 @@ export default function HotelsList() {
 										<LocationCityOutlinedIcon className="mr-1" />
 										{hotel.location}
 									</p>
-
 									<p className="text-gray-700 text-sm mb-4">
 										<LocationOnOutlinedIcon className="mr-1" />
 										{hotel.address}
 									</p>
-
 									<p className="text-gray-700 text-sm mb-4">
 										<LocationOnOutlinedIcon className="mr-1" />
 										{hotel.category}
 									</p>
-
 									{/* Display the rating */}
 									<p className="text-gray-700 text-sm">
+										<ThumbUpOutlinedIcon className="mr-1" />
 										Rating: {hotel.rating}
 									</p>
+									
 								</div>
+
 								{/* ... Additional hotel details ... */}
 							</div>
 						</div>

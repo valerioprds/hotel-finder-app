@@ -10,7 +10,7 @@
 	}
 
 	.container .flex-col {
-		flex-direction: column; /* stack elements vertically on smaller screens */
+		flex-direction: column; 
 	}
 }
 
