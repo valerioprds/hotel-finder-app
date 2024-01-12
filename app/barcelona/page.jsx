@@ -3,9 +3,16 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./BarcelonaComponent.module.css";
+
+//icons
 import LocationCityOutlinedIcon from "@mui/icons-material/LocationCityOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
+import RoomServiceIcon from "@mui/icons-material/RoomService";
+import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+
+//buttons
 import Button from "@mui/material/Button";
 
 export default function HotelsList() {
@@ -58,35 +65,34 @@ export default function HotelsList() {
 									alt={hotel.name}
 								/>
 							</div>
+							{/* hotel description  */}
 							<div className="flex flex-col justify-between p-4 leading-normal flex-grow">
 								<div>
-									<h3 className="font-bold text-lg">
+									<h3 className="font-bold text-lg mb-2">
 										{hotel.name}
 									</h3>
-									<p
-										className={`${styles.customFontSize} text-gray-700 text-sm`}
-									>
-										<LocationCityOutlinedIcon className="mr-1" />
-										{hotel.location}
-									</p>
-									<p className="text-gray-700 text-sm mb-4">
-										<LocationOnOutlinedIcon className="mr-1" />
-										{hotel.address}
-									</p>
-									<p className="text-gray-700 text-sm mb-4">
-										<LocationOnOutlinedIcon className="mr-1" />
-										{hotel.category}
-									</p>
-									<p className="text-gray-700 text-sm">
-										<ThumbUpOutlinedIcon className="mr-1" />
-										Rating: {hotel.rating}
-									</p>
+
+									<div className="flex items-center text-gray-700 text-sm mb-2">
+										<LocationOnOutlinedIcon className="text-blue-500 mr-2" />
+										<p>{hotel.location}</p>
+									</div>
+
+									<div className="flex items-center text-gray-700 text-sm mb-2">
+										{/* Replace with a category icon */}
+										<StarBorderOutlinedIcon className="text-yellow-400 mr-2" />
+										<p>{hotel.category}</p>
+									</div>
+
+									<div className="flex items-center text-gray-700 text-sm mb-2">
+										<ThumbUpIcon className="text-blue-400 mr-2" />
+										<p>{hotel.rating}</p>
+									</div>
 								</div>
 
 								{/* Button Container */}
 								<div className="flex justify-end mt-4">
 									<Button variant="contained">
-										Add To Cart 
+										Add To Cart
 									</Button>
 								</div>
 							</div>
