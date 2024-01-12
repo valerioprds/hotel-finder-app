@@ -51,9 +51,8 @@ export default function HotelsList() {
 							<div className="relative h-64 md:h-auto md:w-1/5">
 								<Image
 									src={hotel.photos}
-									layout="fixed"
-									width={300}
-									height={150}
+									layout="fill"
+									objectFit="cover"
 									alt={hotel.name}
 								/>
 							</div>

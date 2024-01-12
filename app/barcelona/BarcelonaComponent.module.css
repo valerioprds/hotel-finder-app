@@ -1,3 +1,32 @@
 .customFontSize {
-    font-size: 18px; /* Or any other font-size you desire */
+	font-size: 18px; /* Or any other font-size you desire */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+	/* for tablets */
+	.container h2 {
+		font-size: 1.8em; /* smaller font size */
+	}
+
+	.container .flex-col {
+		flex-direction: column; /* stack elements vertically on smaller screens */
+	}
+}
+
+@media screen and (max-width: 480px) {
+	/* for mobile phones */
+	.container h2 {
+		font-size: 1.5em; /* even smaller font size */
+	}
+
+	.container .flex-col {
+		flex-direction: column;
+	}
+
+	/* Adjust font sizes and padding for smaller screens */
+	.container .text-sm {
+		font-size: 0.8em;
+		padding: 8px;
+	}
 }
