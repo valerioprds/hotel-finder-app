@@ -27,15 +27,16 @@ export default function Home() {
 						</div>
 						<div className="p-4">
 							<h3 className="font-bold text-lg mb-2">
-								Card title
+								Visit Catalonia
 							</h3>
 							<p className="text-gray-700 text-base mb-4">
-								Some quick example text to build on the card
-								title and make up the bulk of the card content.
+								Discover the Vibrant Heart of Spain: Explore
+								Catalonia &apos;s Rich History, Stunning
+								Architecture, and Breathtaking Landscapes!
 							</p>
 							<Link href="/somewhere">
 								<p className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
-									Go somewhere
+									Check Availability
 								</p>
 							</Link>
 						</div>
@@ -47,7 +48,7 @@ export default function Home() {
 						<div className="relative h-48 w-full">
 							{/* Replace with your actual image path */}
 							<Image
-								src="/sagrada.jpeg"
+								src="/basco.jpg"
 								layout="fill"
 								objectFit="cover"
 								alt="Image cap"
@@ -55,15 +56,16 @@ export default function Home() {
 						</div>
 						<div className="p-4">
 							<h3 className="font-bold text-lg mb-2">
-								Card title
+								Visit the Basque Country
 							</h3>
 							<p className="text-gray-700 text-base mb-4">
-								Some quick example text to build on the card
-								title and make up the bulk of the card content.
+								Experience the Unique Charm of Basque Country:
+								Captivating Culture, Exquisite Cuisine, and
+								Majestic Natural Beauty Await!
 							</p>
 							<Link href="/somewhere">
 								<p className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
-									Go somewhere
+									Check Availability
 								</p>
 							</Link>
 						</div>
@@ -77,7 +79,7 @@ export default function Home() {
 						<div className="relative h-48 w-full">
 							{/* Replace with your actual image path */}
 							<Image
-								src="/sagrada.jpeg"
+								src="/canarias.jpg"
 								layout="fill"
 								objectFit="cover"
 								alt="Image cap"
@@ -85,15 +87,16 @@ export default function Home() {
 						</div>
 						<div className="p-4">
 							<h3 className="font-bold text-lg mb-2">
-								Card title
+								Visit the Canary Islands
 							</h3>
 							<p className="text-gray-700 text-base mb-4">
-								Some quick example text to build on the card
-								title and make up the bulk of the card content.
+								Escape to the Canary Islands: A Paradise of
+								Sun-Kissed Beaches, Exotic Landscapes,
+								Adventure, and Unforgettable Memories!
 							</p>
 							<Link href="/somewhere">
 								<p className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
-									Go somewhere
+									Check Availability
 								</p>
 							</Link>
 						</div>
