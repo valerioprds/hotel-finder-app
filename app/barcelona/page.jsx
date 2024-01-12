@@ -69,7 +69,7 @@ export default function HotelsList() {
 							<div className="flex flex-col justify-between p-4 leading-normal flex-grow">
 								<div>
 									<h3 className="font-bold text-lg mb-2">
-										{hotel.name}
+										{hotel.name} {hotel.category}
 									</h3>
 
 									<div className="flex items-center text-gray-700 text-sm mb-2">
@@ -77,12 +77,7 @@ export default function HotelsList() {
 										<p>{hotel.location}</p>
 									</div>
 
-									<div className="flex items-center text-gray-700 text-sm mb-2">
-										{/* Replace with a category icon */}
-										<StarBorderOutlinedIcon className="text-yellow-400 mr-2" />
-										<p>{hotel.category}</p>
-									</div>
-
+									
 									<div className="flex items-center text-gray-700 text-sm mb-2">
 										<ThumbUpIcon className="text-blue-400 mr-2" />
 										<p>{hotel.rating}</p>
