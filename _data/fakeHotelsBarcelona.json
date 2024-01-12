@@ -1,0 +1,39 @@
+[
+	{
+		"id": 59,
+
+		"price": 150,
+		"services": ["Free Wi-Fi", "Swimming Pool", "Gym", "Restaurant"]
+	},
+	{
+		"id": 1667,
+		"name": "Fake Hotel 2",
+		"price": 200,
+		"services": ["Free Wi-Fi", "Spa", "Bar", "Room Service"]
+	},
+	{
+		"id": 613,
+		"name": "Fake Hotel 3",
+		"price": 120,
+		"services": ["Free Wi-Fi", "Gym", "Restaurant", "Parking"]
+	},
+	{
+		"id": 354,
+		"name": "Fake Hotel 2",
+		"price": 200,
+		"services": ["Free Wi-Fi", "Spa", "Bar", "Room Service"]
+	},
+
+	{
+		"id": 354,
+		"name": "Fake Hotel 2",
+		"price": 200,
+		"services": ["Free Wi-Fi", "Spa", "Bar", "Room Service"]
+	},
+	{
+		"id": 23,
+		"name": "Fake Hotel 2",
+		"price": 200,
+		"services": ["Free Wi-Fi", "Spa", "Bar", "Room Service"]
+	}
+]
