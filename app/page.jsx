@@ -34,7 +34,7 @@ export default function Home() {
 								Catalonia &apos;s Rich History, Stunning
 								Architecture, and Breathtaking Landscapes!
 							</p>
-							<Link href="/somewhere">
+							<Link href="/catalonia">
 								<p className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
 									Check Availability
 								</p>

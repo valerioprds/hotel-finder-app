@@ -3,7 +3,6 @@ import { Rubik } from "next/font/google";
 
 // components
 
-import Navbar from "./components/Header";
 import Header from "./components/Header";
 
 
