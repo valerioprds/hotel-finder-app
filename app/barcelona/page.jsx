@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./BarcelonaComponent.module.css";
-import ServicesList from "./ServicesList"
+import ServicesList from "./ServicesList";
 
 //icons
 import LocationCityOutlinedIcon from "@mui/icons-material/LocationCityOutlined";
@@ -12,7 +12,6 @@ import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import RoomServiceIcon from "@mui/icons-material/RoomService";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
-
 
 //buttons
 import Button from "@mui/material/Button";
@@ -79,19 +78,17 @@ export default function HotelsList() {
 										<p>{hotel.location}</p>
 									</div>
 
-									
 									<div className="flex items-center text-gray-700 text-sm mb-2">
 										<ThumbUpIcon className="text-blue-400 mr-2" />
-										<p >{hotel.rating}</p>
+										<p>{hotel.rating}</p>
 									</div>
 
-									<div className="flex items-center text-gray-700 text-sm mb-2" >
-										<RoomServiceIcon className="text-blue-400 mr-2" />
-										<p style={{ marginTop: '10px' }}> <ServicesList /> </p>
+									<div className="flex items-center text-gray-700 text-sm mb-2">
+										<RoomServiceIcon className="text-blue-400 mr-2 mb-2" />
+										<p>
+											<ServicesList />
+										</p>
 									</div>
-
-									{/* <servicesList/> */}
-									
 								</div>
 
 								{/* Button Container */}
