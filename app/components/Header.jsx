@@ -12,10 +12,13 @@ import {
 	Button,
 } from "@nextui-org/react";
 
+// icons
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+
 const Header = () => {
 	return (
-		<header className="flex justify-between items-center p-2.5 bg-[#003b95] w-full">
-			<div className="flex-shrink-0">
+		<header className={styles.header}>
+			<div className={styles.logo}>
 				<Image
 					src="/egruppa travel.png"
 					alt="Logo"
@@ -26,19 +29,28 @@ const Header = () => {
 			</div>
 			<Dropdown>
 				<DropdownTrigger>
-					<Button variant="bordered" color="primary">
-						Check Our Destinations
+					<Button className={styles.dropdownTriggerButton}>
+						Check Our Destinations <KeyboardArrowDownIcon />
 					</Button>
 				</DropdownTrigger>
-				<DropdownMenu aria-label="Destinations">
-					<DropdownItem key="barcelona">
-						<a href="/barcelona">Barcelona</a>
+				<DropdownMenu
+					className={styles.dropdownMenu}
+					aria-label="Destinations"
+				>
+					<DropdownItem
+						key="barcelona"
+						className={styles.dropdownItem}
+					>
+						<Link href="/barcelona">Barcelona</Link>
 					</DropdownItem>
-					<DropdownItem key="madrid">
-						<a href="/madrid">Madrid</a>
+					<DropdownItem key="madrid" className={styles.dropdownItem}>
+						<Link href="/madrid">Madrid</Link>
 					</DropdownItem>
-					<DropdownItem key="torremolinos">
-						<a href="/torremolinos">Torremolinos</a>
+					<DropdownItem
+						key="torremolinos"
+						className={styles.dropdownItem}
+					>
+						<Link href="/torremolinos">Torremolinos</Link>
 					</DropdownItem>
 				</DropdownMenu>
 			</Dropdown>

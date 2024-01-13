@@ -1,45 +1,54 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #003b95; /* Booking.com's iconic blue */
-    width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #003b95; /* Booking.com's iconic blue */
+	width: 100%;
 }
 
 .logo {
-    flex-shrink: 0;
+	flex-shrink: 0;
 }
 
 .logoImage {
-    height: 120px; /* Adjust as needed */
+	height: 120px; /* Adjust as needed */
 }
 
 .menu {
-    position: relative;
+	position: relative;
 }
 
-.dropdownButton {
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #003580;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
+/* Header.module.css */
+
+/* Style for the dropdown menu */
+.dropdownMenu {
+	background-color: #fff; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
+	margin-top: 8px; 
 }
 
-.dropdownContent {
-    position: absolute;
-    right: 0;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
+/* Style for each dropdown item */
 .dropdownItem {
-    display: block;
-    padding: 12px 20px;
-    color: #003580;
-    text-decoration: none;
+	color: #003580; 
+	padding: 8px 16px;
+	display: block; 
+	text-decoration: none; 
 }
+
+.dropdownItem:hover {
+	background-color: #e9e9e9; 
+}
+
+/* Style for the dropdown trigger button */
+.dropdownTriggerButton {
+	color: #fff; 
+	background-color: #0070f3;
+	border: none;
+	padding: 8px 16px; 
+	border-radius: 4px; 
+	font-size: 1rem; 
+}
+
