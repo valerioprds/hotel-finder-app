@@ -77,6 +77,29 @@
 
 /* Header.module.css */
 .iconStyle {
-	color: white; 
+	color: white;
 	font-size: 30px;
+}
+
+/* Header.module.css */
+
+.menuButton {
+	display: none;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+	.menuButton {
+		display: block;
+		/* otros estilos para el botón del menú */
+	}
+
+	.navBar {
+		display: none;
+		/* otros estilos para el menú */
+	}
+
+	.navBar.show {
+		display: block;
+	}
 }

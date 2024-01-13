@@ -16,8 +16,14 @@ import {
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import FlightIcon from "@mui/icons-material/Flight";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
+import MenuIcon from "@mui/icons-material/Menu"; // Importa el icono de menú
 
 const Header = () => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
 	return (
 		<header className={styles.header}>
 			<div className={styles.logo}>
@@ -31,7 +37,13 @@ const Header = () => {
 					/>
 				</Link>
 			</div>
-			<nav className={styles.navBar}>
+
+			<Button className={styles.menuButton} onClick={toggleMenu}>
+				<MenuIcon />
+			</Button>
+			<nav
+				className={`${styles.navBar} ${isMenuOpen ? styles.show : ""}`}
+			>
 				<Dropdown>
 					<DropdownTrigger>
 						<Button className={styles.dropdownTriggerButton}>
