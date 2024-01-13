@@ -4,50 +4,46 @@ import React, { useState } from "react";
 import styles from "./Header.module.css"; // Import the styles
 import Image from "next/image";
 import Link from "next/link";
-
+import {
+	Dropdown,
+	DropdownTrigger,
+	DropdownMenu,
+	DropdownItem,
+	Button,
+} from "@nextui-org/react";
 
 const Header = () => {
-	const [isOpen, setIsOpen] = useState(false);
-
-	const toggleDropdown = () => setIsOpen(!isOpen);
-
 	return (
-        <header className={styles.header}>
-            <div className={styles.logo}>
-                {/* Replace with your actual logo */}
-                <Image
-                    src="/egruppa travel.png" // Adjust the path as needed
-                    alt="Logo"
-                    className={styles.logoImage}
-                    width={150}
-                    height={150} // Set the height as needed
-                    layout="fixed" // Can be 'fixed', 'responsive', 'intrinsic', or 'fill'
-                />
-            </div>
-            <div className={styles.menu}>
-                <button
-                    onClick={toggleDropdown}
-                    className={styles.dropdownButton}
-                >
-                    Check Our Destinations
-                </button>
-                {isOpen && (
-                    <div className={styles.dropdownContent}>
-                        {/* Dropdown menu items */}
-                        <Link href="/barcelona" className={styles.dropdownItem}>
-                            Barcelona
-                        </Link>
-                        <Link href="/madrid" className={styles.dropdownItem}>
-                            Madrid
-                        </Link>
-                        <a href="/torremolinos" className={styles.dropdownItem}>
-                            Torremolinos
-                        </a>
-                    </div>
-                )}
-            </div>
-        </header>
-    );
+		<header className="flex justify-between items-center p-2.5 bg-[#003b95] w-full">
+			<div className="flex-shrink-0">
+				<Image
+					src="/egruppa travel.png"
+					alt="Logo"
+					width={150}
+					height={120}
+					layout="fixed"
+				/>
+			</div>
+			<Dropdown>
+				<DropdownTrigger>
+					<Button variant="bordered" color="primary">
+						Check Our Destinations
+					</Button>
+				</DropdownTrigger>
+				<DropdownMenu aria-label="Destinations">
+					<DropdownItem key="barcelona">
+						<a href="/barcelona">Barcelona</a>
+					</DropdownItem>
+					<DropdownItem key="madrid">
+						<a href="/madrid">Madrid</a>
+					</DropdownItem>
+					<DropdownItem key="torremolinos">
+						<a href="/torremolinos">Torremolinos</a>
+					</DropdownItem>
+				</DropdownMenu>
+			</Dropdown>
+		</header>
+	);
 };
 
 export default Header;
