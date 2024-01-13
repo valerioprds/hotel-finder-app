@@ -25,8 +25,13 @@ export default async function servicesList() {
 						className="flex items-center text-gray-700 text-sm mb-2"
 					>
 						{" "}
-						<AttachMoneyIcon className="mr-1" />
-						<p>{accommodations.price}</p>
+						<AttachMoneyIcon
+							className="mr-1"
+							style={{ fontSize: "25px", fontWeight: "bold" }}
+						/>
+						<p style={{ fontSize: "25px", fontWeight: "bold" }}>
+							{accommodations.price}
+						</p>
 					</div>
 				</>
 			))}
