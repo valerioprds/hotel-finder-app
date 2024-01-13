@@ -2,6 +2,10 @@
 	font-size: 18px; /* Or any other font-size you desire */
 }
 
+.services {
+	margin-top: 10px !important;
+}
+
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
 	/* for tablets */
