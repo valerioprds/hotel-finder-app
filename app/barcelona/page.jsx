@@ -54,8 +54,19 @@ export default function HotelsList() {
 	}, []);
 
 	const addToCart = (hotel) => {
-		setCart([...cart, hotel]);
-	};
+        const hotelData = {
+            name: hotel.name,
+            location: hotel.location,
+            category: hotel.category,
+            rating: hotel.rating
+        };
+
+        const updatedCart = [...cart, hotelData];
+        setCart(updatedCart);
+
+        // Console log the updated cart
+        console.log(updatedCart);
+    };
 
 	return (
 		<div className={`bg-gray-100 p-4 ${styles.container}`}>
