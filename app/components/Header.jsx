@@ -19,41 +19,50 @@ const Header = () => {
 	return (
 		<header className={styles.header}>
 			<div className={styles.logo}>
-				<Image
-					src="/egruppa travel.png"
-					alt="Logo"
-					width={150}
-					height={120}
-					layout="fixed"
-				/>
+				<Link href="/">
+					<Image
+						src="/logo4.png"
+						alt="Logo"
+						width={100}
+						height={50}
+						layout="fixed"
+					/>
+				</Link>
 			</div>
-			<Dropdown>
-				<DropdownTrigger>
-					<Button className={styles.dropdownTriggerButton}>
-						Check Our Destinations <KeyboardArrowDownIcon />
-					</Button>
-				</DropdownTrigger>
-				<DropdownMenu
-					className={styles.dropdownMenu}
-					aria-label="Destinations"
-				>
-					<DropdownItem
-						key="barcelona"
-						className={styles.dropdownItem}
+			<nav className={styles.navBar}>
+				<Dropdown>
+					<DropdownTrigger>
+						<Button className={styles.dropdownTriggerButton}>
+							Check Our Destinations <KeyboardArrowDownIcon />
+						</Button>
+					</DropdownTrigger>
+					<DropdownMenu
+						className={styles.dropdownMenu}
+						aria-label="Destinations"
 					>
-						<Link href="/barcelona">Barcelona</Link>
-					</DropdownItem>
-					<DropdownItem key="madrid" className={styles.dropdownItem}>
-						<Link href="/madrid">Madrid</Link>
-					</DropdownItem>
-					<DropdownItem
-						key="torremolinos"
-						className={styles.dropdownItem}
-					>
-						<Link href="/torremolinos">Torremolinos</Link>
-					</DropdownItem>
-				</DropdownMenu>
-			</Dropdown>
+						<DropdownItem
+							key="barcelona"
+							className={styles.dropdownItem}
+						>
+							<Link href="/barcelona">Barcelona</Link>
+						</DropdownItem>
+						<DropdownItem
+							key="madrid"
+							className={styles.dropdownItem}
+						>
+							<Link href="/madrid">Madrid</Link>
+						</DropdownItem>
+						<DropdownItem
+							key="torremolinos"
+							className={styles.dropdownItem}
+						>
+							<Link href="/torremolinos">Torremolinos</Link>
+						</DropdownItem>
+					</DropdownMenu>
+				</Dropdown>
+				<Button className={styles.navButton}>My Trip</Button>
+				<Button className={styles.navButton}>Login</Button>
+			</nav>
 		</header>
 	);
 };
