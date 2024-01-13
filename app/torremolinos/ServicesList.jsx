@@ -1,3 +1,6 @@
+import RoomServiceIcon from "@mui/icons-material/RoomService";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+
 async function getServices() {
 	const res = await fetch("http://localhost:4000/accommodations");
 
@@ -9,12 +12,23 @@ export default async function servicesList() {
 	return (
 		<>
 			{accommodations.map((accommodations) => (
-				<div
-					key={accommodations.services}
-					className="flex items-center text-gray-700 text-sm mb-2"
-				>
-					<p>{accommodations.services}</p>
-				</div>
+				<>
+					<div
+						key={accommodations.services}
+						className="flex items-center text-gray-700 text-sm mb-2"
+					>
+						<RoomServiceIcon className="text-blue-400 mr-2 mb-1" />
+						<p>{accommodations.services}</p>
+					</div>
+					<div
+						key={accommodations.price}
+						className="flex items-center text-gray-700 text-sm mb-2"
+					>
+						{" "}
+						<AttachMoneyIcon className="mr-1" />
+						<p>{accommodations.price}</p>
+					</div>
+				</>
 			))}
 		</>
 	);

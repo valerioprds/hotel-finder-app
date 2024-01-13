@@ -84,7 +84,6 @@ export default function HotelsList() {
 									</div>
 
 									<div className="flex items-center text-gray-700 text-sm mb-2">
-										<RoomServiceIcon className="text-blue-400 mr-2 mb-2" />
 										<p>
 											<ServicesList />
 										</p>

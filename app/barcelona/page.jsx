@@ -5,6 +5,9 @@ import Image from "next/image";
 import styles from "./BarcelonaComponent.module.css";
 import ServicesList from "./ServicesList";
 
+import cart from "/app/cart/page.jsx";
+
+
 //icons
 import LocationCityOutlinedIcon from "@mui/icons-material/LocationCityOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
@@ -18,6 +21,8 @@ import Button from "@mui/material/Button";
 
 export default function HotelsList() {
 	const [hotels, setHotels] = useState([]);
+	const [cart, setCart] = useState([]); // Ensure this is an empty array
+
 
 	useEffect(() => {
 		fetch("http://api.egruppa.com/accommodations/search")
@@ -47,6 +52,10 @@ export default function HotelsList() {
 				console.error("Error fetching data: ", error);
 			});
 	}, []);
+
+	const addToCart = (hotel) => {
+		setCart([...cart, hotel]);
+	};
 
 	return (
 		<div className={`bg-gray-100 p-4 ${styles.container}`}>
@@ -84,16 +93,20 @@ export default function HotelsList() {
 									</div>
 
 									<div className="flex items-center text-gray-700 text-sm mb-2">
-										<RoomServiceIcon className="text-blue-400 mr-2 mb-2" />
+										
 										<p>
 											<ServicesList />
 										</p>
 									</div>
 								</div>
 
-								{/* Button Container */}
+								{/* Add to Cart Button */}
 								<div className="flex justify-end mt-4">
-									<Button variant="outlined" size="large">
+									<Button
+										variant="outlined"
+										size="large"
+										onClick={() => addToCart(hotel)}
+									>
 										add to cart
 									</Button>
 								</div>
