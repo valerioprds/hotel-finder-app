@@ -51,7 +51,9 @@ export default function HotelsList() {
 	return (
 		<div className={`bg-gray-100 p-4 ${styles.container}`}>
 			<div className="container mx-auto">
-				<h2 className="font-bold text-2xl mb-4">Hotels in Torremolinos</h2>
+				<h2 className="font-bold text-2xl mb-4">
+					Hotels in Torremolinos
+				</h2>
 				<div className="flex flex-col">
 					{hotels.map((hotel, index) => (
 						<div
@@ -92,8 +94,8 @@ export default function HotelsList() {
 
 								{/* Button Container */}
 								<div className="flex justify-end mt-4">
-									<Button variant="contained">
-										Add To Cart
+									<Button variant="outlined" size="large">
+										add to cart
 									</Button>
 								</div>
 							</div>
