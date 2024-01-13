@@ -14,6 +14,8 @@ import {
 
 // icons
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import FlightIcon from "@mui/icons-material/Flight";
+import LockOpenIcon from "@mui/icons-material/LockOpen";
 
 const Header = () => {
 	return (
@@ -60,8 +62,15 @@ const Header = () => {
 						</DropdownItem>
 					</DropdownMenu>
 				</Dropdown>
-				<Button className={styles.navButton}>My Trip</Button>
-				<Button className={styles.navButton}>Login</Button>
+
+				<Button className={styles.navButton}>
+					{" "}
+					<FlightIcon className={styles.iconStyle} /> My Trip
+				</Button>
+				<Button className={styles.navButton}>
+					{" "}
+					<LockOpenIcon className={styles.iconStyle} /> Login
+				</Button>
 			</nav>
 		</header>
 	);

@@ -34,8 +34,6 @@
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar sensación de elevación */
 }
 
-
-
 .dropdownMenu {
 	background-color: #fff;
 	border: 1px solid #ccc;
@@ -71,7 +69,14 @@
 	color: #ffb700;
 }
 
-
-.img{
+.img {
 	border-radius: 50%;
+}
+
+/* icons */
+
+/* Header.module.css */
+.iconStyle {
+	color: white; 
+	font-size: 30px;
 }
