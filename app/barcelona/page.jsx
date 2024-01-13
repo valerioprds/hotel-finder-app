@@ -93,8 +93,8 @@ export default function HotelsList() {
 
 								{/* Button Container */}
 								<div className="flex justify-end mt-4">
-									<Button variant="contained">
-										Add To Cart
+									<Button variant="outlined" size="large">
+										add to cart
 									</Button>
 								</div>
 							</div>
