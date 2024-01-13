@@ -27,12 +27,12 @@ export default function Home() {
 						</div>
 						<div className="p-4">
 							<h3 className="font-bold text-lg mb-2">
-								Visit Catalonia
+								Visit Barcelona
 							</h3>
 							<p className="text-gray-700 text-base mb-4">
-								Discover the Vibrant Heart of Spain: Explore
-								Catalonia &apos;s Rich History, Stunning
-								Architecture, and Breathtaking Landscapes!
+								Uncover Barcelona &apos;s Charm: Gaudí &apos;s
+								Masterpieces, Vibrant Culture, Gastronomic
+								Delights, and Picturesque Streets Await!
 							</p>
 							<Link href="/barcelona">
 								<p className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
@@ -48,7 +48,7 @@ export default function Home() {
 						<div className="relative h-48 w-full">
 							{/* Replace with your actual image path */}
 							<Image
-								src="/basco.jpg"
+								src="/madrid.jpeg"
 								layout="fill"
 								objectFit="cover"
 								alt="Image cap"
@@ -56,14 +56,14 @@ export default function Home() {
 						</div>
 						<div className="p-4">
 							<h3 className="font-bold text-lg mb-2">
-								Visit the Basque Country
+								Visit Madrid
 							</h3>
 							<p className="text-gray-700 text-base mb-4">
-								Experience the Unique Charm of Basque Country:
-								Captivating Culture, Exquisite Cuisine, and
-								Majestic Natural Beauty Await!
+								Dive into Madrid &apos;s Splendor: Immerse in
+								Rich Art, Historic Palaces, Bustling Markets,
+								and Exquisite Spanish Gastronomy!
 							</p>
-							<Link href="/somewhere">
+							<Link href="/madrid">
 								<p className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
 									Check Availability
 								</p>
@@ -79,7 +79,7 @@ export default function Home() {
 						<div className="relative h-48 w-full">
 							{/* Replace with your actual image path */}
 							<Image
-								src="/canarias.jpg"
+								src="/torremolinos.jpg"
 								layout="fill"
 								objectFit="cover"
 								alt="Image cap"
@@ -87,14 +87,14 @@ export default function Home() {
 						</div>
 						<div className="p-4">
 							<h3 className="font-bold text-lg mb-2">
-								Visit the Canary Islands
+								Visit Torremolinos
 							</h3>
 							<p className="text-gray-700 text-base mb-4">
-								Escape to the Canary Islands: A Paradise of
-								Sun-Kissed Beaches, Exotic Landscapes,
-								Adventure, and Unforgettable Memories!
+								Experience Torremolinos: Breathtaking Beaches,
+								Lively Promenades, Traditional Andalusian
+								Cuisine, and Enchanting Cultural Festivities!
 							</p>
-							<Link href="/somewhere">
+							<Link href="/torremolinos">
 								<p className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
 									Check Availability
 								</p>

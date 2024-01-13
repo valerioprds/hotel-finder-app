@@ -37,11 +37,11 @@ const Header = () => {
                         <Link href="/barcelona" className={styles.dropdownItem}>
                             Barcelona
                         </Link>
-                        <Link href="/barcelona" className={styles.dropdownItem}>
+                        <Link href="/madrid" className={styles.dropdownItem}>
                             Madrid
                         </Link>
-                        <a href="/barcelona" className={styles.dropdownItem}>
-                            Valencia
+                        <a href="/torremolinos" className={styles.dropdownItem}>
+                            Torremolinos
                         </a>
                     </div>
                 )}
