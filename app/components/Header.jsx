@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import styles from "./Header.module.css"; // Import the styles
 import Image from "next/image";
+import Link from "next/link";
+
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -32,14 +34,14 @@ const Header = () => {
                 {isOpen && (
                     <div className={styles.dropdownContent}>
                         {/* Dropdown menu items */}
-                        <a href="#" className={styles.dropdownItem}>
-                            Catalonia
-                        </a>
-                        <a href="#" className={styles.dropdownItem}>
-                            Basque Country
-                        </a>
-                        <a href="#" className={styles.dropdownItem}>
-                            Canary Islands
+                        <Link href="/barcelona" className={styles.dropdownItem}>
+                            Barcelona
+                        </Link>
+                        <Link href="/barcelona" className={styles.dropdownItem}>
+                            Madrid
+                        </Link>
+                        <a href="/barcelona" className={styles.dropdownItem}>
+                            Valencia
                         </a>
                     </div>
                 )}
