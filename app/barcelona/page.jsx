@@ -5,7 +5,7 @@ import Image from "next/image";
 import styles from "./BarcelonaComponent.module.css";
 import ServicesList from "./ServicesList";
 
-import cart from "/app/cart/page.jsx";
+//import cart from "/app/cart/page.jsx";
 
 
 //icons
