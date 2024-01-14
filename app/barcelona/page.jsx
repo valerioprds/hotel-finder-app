@@ -1,26 +1,19 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./BarcelonaComponent.module.css";
 import ServicesList from "./ServicesList";
 
-//import cart from "/app/cart/page.jsx";
-
-//icons
-import LocationCityOutlinedIcon from "@mui/icons-material/LocationCityOutlined";
+// Icons
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
-import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
-import RoomServiceIcon from "@mui/icons-material/RoomService";
-import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 
-//buttons
+// Buttons
 import Button from "@mui/material/Button";
 
 export default function HotelsList() {
 	const [hotels, setHotels] = useState([]);
-	const [cart, setCart] = useState([]); // Ensure this is an empty array
+	const [cart, setCart] = useState([]);
 
 	useEffect(() => {
 		fetch("http://api.egruppa.com/accommodations/search")
@@ -45,6 +38,16 @@ export default function HotelsList() {
 			})
 			.then((hotelsWithDetails) => {
 				setHotels(hotelsWithDetails);
+				setTimeout(() => {
+					// Add animation after state is set
+					document.querySelectorAll(".card").forEach((card) => {
+						card.style.transform = "scale(1.05)";
+						setTimeout(
+							() => (card.style.transform = "scale(1)"),
+							1000
+						);
+					});
+				}, 0);
 			})
 			.catch((error) => {
 				console.error("Error fetching data: ", error);
@@ -61,8 +64,6 @@ export default function HotelsList() {
 
 		const updatedCart = [...cart, hotelData];
 		setCart(updatedCart);
-
-		// Console log the updated cart
 		console.log(updatedCart);
 	};
 
@@ -74,7 +75,7 @@ export default function HotelsList() {
 					{hotels.map((hotel, index) => (
 						<div
 							key={index}
-							className="mb-4 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row"
+							className={`${styles.card} mb-4 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row`}
 						>
 							<div className="relative h-64 md:h-auto md:w-1/5">
 								<Image
@@ -84,7 +85,7 @@ export default function HotelsList() {
 									alt={hotel.name}
 								/>
 							</div>
-							{/* hotel description  */}
+							{/* hotel description */}
 							<div className="flex flex-col justify-between p-4 leading-normal flex-grow">
 								<div>
 									<h3 className="font-bold text-lg mb-2">
@@ -107,13 +108,17 @@ export default function HotelsList() {
 										</p>
 									</div>
 								</div>
-
 								{/* Add to Cart Button */}
 								<div className="flex justify-end mt-4">
-									<Button variant="outlined" size="large">
-										add to cart
+									<Button
+										className={styles.addButton}
+										variant="outlined"
+										size="large"
+									>
+										{" "}
+										{/* onClick={() => addToCart(hotel)} */}
+										add to my trip
 									</Button>
-									{/* onClick={() => addToCart(hotel)} */}
 								</div>
 							</div>
 						</div>

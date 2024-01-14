@@ -5,13 +5,13 @@ export default function Home() {
 	return (
 		<main className="p-4 bg-gray-100">
 			<h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">
-				Discover Spain's Wonders with Our Tailor-Made Travel Packages!
+				Discover Spain&apos;s Wonders with Our Tailor-Made Travel Packages!
 			</h2>
 			<p className="text-lg text-gray-600">
 				Dive into an unforgettable journey through Spain, a land of
 				vibrant cultures, historic splendors, and breathtaking
 				landscapes. From the artistic streets of Barcelona to the
-				grandeur of Madrid's palaces, Spain offers an array of
+				grandeur of Madrid&apos;s palaces, Spain offers an array of
 				experiences for every traveler. Immerse yourself in the rich
 				tapestry of Spanish life. Marvel at the architectural wonders
 				that dot the skyline, indulge in the culinary delights that
