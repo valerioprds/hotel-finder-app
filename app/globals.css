@@ -20,8 +20,6 @@ p > a {
 	@apply text-primary underline;
 }
 
-
-
 /* feedback styles */
 .error {
 	@apply border-2 
@@ -35,6 +33,29 @@ p > a {
     my-4 mx-auto;
 }
 
+/* Add these styles to your existing global CSS file */
+
+.hotelCard {
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 59, 149, 0.2);
+}
+
+.hotelCard:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 12px 0 rgba(0, 59, 149, 0.3);
+}
+
+.hotelAddButton {
+	background-color: #003b95;
+	color: white;
+	transition: background-color 0.3s ease;
+}
+
+.hotelAddButton:hover {
+	background-color: #ffb700;
+	border: none;
+}
 
 /* pill styles */
 .pill {

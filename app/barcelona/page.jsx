@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import styles from "./BarcelonaComponent.module.css";
 import ServicesList from "./ServicesList";
 
 // Icons
@@ -39,8 +38,7 @@ export default function HotelsList() {
 			.then((hotelsWithDetails) => {
 				setHotels(hotelsWithDetails);
 				setTimeout(() => {
-					// Add animation after state is set
-					document.querySelectorAll(".card").forEach((card) => {
+					document.querySelectorAll(".hotelCard").forEach((card) => {
 						card.style.transform = "scale(1.05)";
 						setTimeout(
 							() => (card.style.transform = "scale(1)"),
@@ -68,14 +66,14 @@ export default function HotelsList() {
 	};
 
 	return (
-		<div className={`bg-gray-100 p-4 ${styles.container}`}>
+		<div className="bg-gray-100 p-4 hotelContainer">
 			<div className="container mx-auto">
 				<h2 className="font-bold text-2xl mb-4">Hotels in Barcelona</h2>
 				<div className="flex flex-col">
 					{hotels.map((hotel, index) => (
 						<div
 							key={index}
-							className={`${styles.card} mb-4 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row`}
+							className="hotelCard mb-4 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row"
 						>
 							<div className="relative h-64 md:h-auto md:w-1/5">
 								<Image
@@ -85,13 +83,11 @@ export default function HotelsList() {
 									alt={hotel.name}
 								/>
 							</div>
-							{/* hotel description */}
 							<div className="flex flex-col justify-between p-4 leading-normal flex-grow">
 								<div>
 									<h3 className="font-bold text-lg mb-2">
 										{hotel.name} {hotel.category}
 									</h3>
-
 									<div className="flex items-center text-gray-700 text-sm mb-2">
 										<LocationOnOutlinedIcon className="text-blue-500 mr-2" />
 										<p>{hotel.location}</p>
@@ -108,16 +104,15 @@ export default function HotelsList() {
 										</p>
 									</div>
 								</div>
-								{/* Add to Cart Button */}
+
 								<div className="flex justify-end mt-4">
 									<Button
-										className={styles.addButton}
+										className="hotelAddButton"
 										variant="outlined"
 										size="large"
+										onClick={() => addToCart(hotel)}
 									>
-										{" "}
-										{/* onClick={() => addToCart(hotel)} */}
-										add to my trip
+										add to cart
 									</Button>
 								</div>
 							</div>

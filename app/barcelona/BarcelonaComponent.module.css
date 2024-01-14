@@ -1,31 +1,4 @@
-/* BarcelonaComponent.module.css */
-.container {
-	color: #003b95; /* Primary text color */
-}
 
-.card {
-	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0, 59, 149, 0.2);
-}
-
-.card:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 6px 12px 0 rgba(0, 59, 149, 0.3);
-}
-
-.addButton {
-	background-color: #003b95;
-	color: white;
-	transition: background-color 0.3s ease;
-}
-
-.addButton:hover {
-	background-color: #ffb700;
-	border: none;
-}
-
-/* Add more custom styles as needed */
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
