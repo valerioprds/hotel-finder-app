@@ -84,7 +84,7 @@
 /* Header.module.css */
 
 .menuButton {
-	display: none;
+	display: none !important;
 }
 
 /* Estilos para pantallas pequeñas */
