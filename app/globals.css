@@ -80,6 +80,9 @@ p > a {
 	border: none;
 }
 
+
+
+
 /* pill styles */
 .pill {
 	@apply py-1 px-2 mt-3

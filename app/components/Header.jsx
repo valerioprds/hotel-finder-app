@@ -77,7 +77,8 @@ const Header = () => {
 
 				<Button className={styles.navButton}>
 					{" "}
-					<FlightIcon className={styles.iconStyle} /> My Trip
+					<FlightIcon className={styles.iconStyle} />{" "}
+					<Link href="/myTrip">My Trip</Link>
 				</Button>
 				<Button className={styles.navButton}>
 					{" "}

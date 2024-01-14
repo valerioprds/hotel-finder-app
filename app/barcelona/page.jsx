@@ -58,17 +58,17 @@ function HotelsList({ onAddToTrip }) {
 								{hotel.name} {hotel.category}
 							</h3>
 							<div className="flex items-center text-gray-700 text-sm mb-2">
-										<LocationOnOutlinedIcon className="text-blue-500 mr-2" />
-										<p>{hotel.location}</p>
-									</div>
+								<LocationOnOutlinedIcon className="text-blue-500 mr-2" />
+								<p>{hotel.location}</p>
+							</div>
 							<div className="flex items-center text-gray-700 text-sm mb-2">
-										<ThumbUpIcon className="text-blue-400 mr-2" />
-										<p>{hotel.rating}</p>
-									</div>
+								<ThumbUpIcon className="text-blue-400 mr-2" />
+								<p>{hotel.rating}</p>
+							</div>
 							<div className="flex items-center text-gray-700 text-sm mb-2">
-							<p>
-											<ServicesList />
-										</p>
+								<p>
+									<ServicesList />
+								</p>
 							</div>
 						</div>
 						<div className="flex justify-end mt-4">
