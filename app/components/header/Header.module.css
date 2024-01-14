@@ -1,105 +1,24 @@
 .header {
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	padding: 10px 20px;
 	background-color: #003b95; /* Booking.com's iconic blue */
 	width: 100%;
 }
 
-.logo {
-	flex-shrink: 0;
-}
-
-.logoImage {
-	height: 120px; /* Adjust as needed */
-}
-
-.navBar {
-	display: flex;
-	align-items: center;
-}
-
-.navButton {
-	margin-left: 40px;
-	/* Puedes ajustar el estilo de los botones aquí */
+.linksStyle{
 	color: white;
-	transition: all 0.3s ease; /* Suaviza la transición de las propiedades animadas */
 	font-size: 24px;
 }
 
-.navButton:hover {
-	color: #ffb700;
-	transform: scale(1.05); /* Hace el botón un poco más grande */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar sensación de elevación */
-}
-
-.dropdownMenu {
-	background-color: #fff;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-	margin-top: 8px;
+.linksStyle:hover{
+	color:#ffb700;
 	font-size: 24px;
 }
 
-/* Style for each dropdown item */
-.dropdownItem {
-	color: #003580;
-	padding: 8px 16px;
-	display: block;
-	text-decoration: none;
-}
 
-.dropdownItem:hover {
-	background-color: #e9e9e9;
-}
 
-/* Style for the dropdown trigger button */
-.dropdownTriggerButton {
-	color: #fff;
-	background-color: #0070f3;
-	border: none;
-	padding: 8px 16px;
-	border-radius: 4px;
-	font-size: 24px;
-}
 
-.dropdownTriggerButton:hover {
-	color: #ffb700;
-}
 
-.img {
-	border-radius: 50%;
-}
 
-/* icons */
 
-/* Header.module.css */
-.iconStyle {
-	color: white;
-	font-size: 30px;
-}
 
-/* Header.module.css */
-
-.menuButton {
-	display: none !important;
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-	.menuButton {
-		display: block;
-		/* otros estilos para el botón del menú */
-	}
-
-	.navBar {
-		display: none;
-		/* otros estilos para el menú */
-	}
-
-	.navBar.show {
-		display: block;
-	}
-}
