@@ -1,10 +1,17 @@
-// TripDetails.jsx
 import React from "react";
-import App from "../barcelona/page";
-export default function myTrip() {
+
+function MyTrip({ myTrip }) {
 	return (
 		<div>
-			<App />
+			<h2>My Trip</h2>
+			{myTrip.map((hotel, index) => (
+				<div key={index}>
+					<h3>{hotel.name}</h3>
+					{/* Display other hotel details as needed */}
+				</div>
+			))}
 		</div>
 	);
 }
+
+export default MyTrip;
