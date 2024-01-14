@@ -18,7 +18,8 @@ export default function Home() {
 				that dot the skyline, indulge in the culinary delights that
 				Spain is famed for, and soak in the sun on picturesque beaches.
 				<span style={{ fontWeight: "bold" }}>
-					Book with us now and embark on your dream Spanish adventure!
+					&nbsp;Book with us now and embark on your dream Spanish
+					adventure!
 				</span>
 			</p>
 
