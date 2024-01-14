@@ -20,6 +20,29 @@ p > a {
 	@apply text-primary underline;
 }
 
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.card h3 {
+	color: #003b95;
+}
+
+.card p {
+	line-height: 1.5;
+}
+
+
+
+.card a:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	color: #ffb700;
+	
+}
+
 /* feedback styles */
 .error {
 	@apply border-2 

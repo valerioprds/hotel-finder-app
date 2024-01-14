@@ -5,7 +5,8 @@ export default function Home() {
 	return (
 		<main className="p-4 bg-gray-100">
 			<h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">
-				Discover Spain&apos;s Wonders with Our Tailor-Made Travel Packages!
+				Discover Spain&apos;s Wonders with Our Tailor-Made Travel
+				Packages!
 			</h2>
 			<p className="text-lg text-gray-600">
 				Dive into an unforgettable journey through Spain, a land of
@@ -37,23 +38,33 @@ export default function Home() {
 								src="/sagrada.jpeg"
 								layout="fill"
 								objectFit="cover"
-								alt="Image cap"
+								alt="Sagrada Familia"
 							/>
 						</div>
 						<div className="p-4">
 							<h3 className="font-bold text-lg mb-2">
 								Visit Barcelona
 							</h3>
-							<p className="text-gray-700 text-base mb-4">
-								Uncover Barcelona Charm: Gaudí Masterpieces,
-								Vibrant Culture, Gastronomic Delights, and
-								Picturesque Streets Await!
+							<p className="text-gray-700 text-base mb-3">
+								Uncover Barcelona&apos;s charm with Gaudí&apos;s
+								masterpieces, vibrant culture, gastronomic
+								delights, and picturesque streets!
 							</p>
-							<Link href="/barcelona">
-								<p className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
-									Check Availability
-								</p>
-							</Link>
+							<div className="flex justify-between items-center">
+								<small
+									style={{
+										fontWeight: "bold",
+										fontStyle: "italic",
+									}}
+								>
+									From 99 Euros
+								</small>
+								<Link href="/barcelona" legacyBehavior>
+									<a className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+										Check Availability
+									</a>
+								</Link>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -66,26 +77,37 @@ export default function Home() {
 								src="/madrid.jpeg"
 								layout="fill"
 								objectFit="cover"
-								alt="Image cap"
+								alt="Sagrada Familia"
 							/>
 						</div>
 						<div className="p-4">
 							<h3 className="font-bold text-lg mb-2">
-								Visit Madrid
+								Visit madrid
 							</h3>
-							<p className="text-gray-700 text-base mb-4">
+							<p className="text-gray-700 text-base mb-3">
 								Dive into Madrid Splendor: Immerse in Rich Art,
 								Historic Palaces, Bustling Markets, and
 								Exquisite Spanish Gastronomy!
 							</p>
-							<Link href="/madrid">
-								<p className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
-									Check Availability
-								</p>
-							</Link>
+							<div className="flex justify-between items-center">
+								<small
+									style={{
+										fontWeight: "bold",
+										fontStyle: "italic",
+									}}
+								>
+									From 120 Euros
+								</small>
+								<Link href="/barcelona" legacyBehavior>
+									<a className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+										Check Availability
+									</a>
+								</Link>
+							</div>
 						</div>
 					</div>
 				</div>
+
 				{/* Card 3 */}
 				<div className="w-full md:w-1/2 lg:w-1/4 p-2">
 					<div className="card bg-white rounded-lg shadow-lg overflow-hidden">
@@ -94,27 +116,36 @@ export default function Home() {
 								src="/torremolinos.jpg"
 								layout="fill"
 								objectFit="cover"
-								alt="Image cap"
+								alt="Sagrada Familia"
 							/>
 						</div>
 						<div className="p-4">
 							<h3 className="font-bold text-lg mb-2">
 								Visit Torremolinos
 							</h3>
-							<p className="text-gray-700 text-base mb-4">
+							<p className="text-gray-700 text-base mb-3">
 								Experience Torremolinos: Breathtaking Beaches,
 								Lively Promenades, Traditional Andalusian
 								Cuisine, and Enchanting Cultural Festivities!
 							</p>
-							<Link href="/torremolinos">
-								<p className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
-									Check Availability
-								</p>
-							</Link>
+							<div className="flex justify-between items-center">
+								<small
+									style={{
+										fontWeight: "bold",
+										fontStyle: "italic",
+									}}
+								>
+									From 89 Euros
+								</small>
+								<Link href="/barcelona" legacyBehavior>
+									<a className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+										Check Availability
+									</a>
+								</Link>
+							</div>
 						</div>
 					</div>
 				</div>
-				{/* Repeat the above <div> block for each additional card you need */}
 			</div>
 		</main>
 	);
