@@ -68,7 +68,9 @@ export default function HotelsList() {
 	return (
 		<div className="bg-gray-100 p-4 hotelContainer">
 			<div className="container mx-auto">
-				<h2 className="font-bold text-2xl mb-4">Hotels in Torremolinos</h2>
+				<h2 className="font-bold text-2xl mb-4">
+					Hotels in Torremolinos
+				</h2>
 				<div className="flex flex-col">
 					{hotels.map((hotel, index) => (
 						<div
@@ -112,7 +114,7 @@ export default function HotelsList() {
 										size="large"
 										onClick={() => addToCart(hotel)}
 									>
-										add to cart
+										add to my trip
 									</Button>
 								</div>
 							</div>

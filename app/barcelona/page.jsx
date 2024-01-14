@@ -112,7 +112,7 @@ export default function HotelsList() {
 										size="large"
 										onClick={() => addToCart(hotel)}
 									>
-										add to cart
+										add to my trip
 									</Button>
 								</div>
 							</div>
