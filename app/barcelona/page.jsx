@@ -39,6 +39,8 @@ function HotelsList({ onAddToTrip }) {
 
 	return (
 		<div className="flex flex-col">
+			<h2 className="font-bold text-2xl mb-4">Hotels in Barcelona</h2>
+
 			{hotels.map((hotel, index) => (
 				<div
 					key={index}
@@ -97,7 +99,6 @@ function App() {
 
 	return (
 		<div>
-			<h2 className="font-bold text-2xl mb-4">Hotels in Barcelona</h2>
 			<HotelsList onAddToTrip={addToTrip} />
 			<h2>My Trip</h2>
 			{myTrip.map((hotel, index) => (
