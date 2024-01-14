@@ -57,16 +57,18 @@ function HotelsList({ onAddToTrip }) {
 							<h3 className="font-bold text-lg mb-2">
 								{hotel.name} {hotel.category}
 							</h3>
-							<p className="flex items-center text-gray-700 text-sm mb-2">
-								<LocationOnOutlinedIcon className="text-blue-500 mr-2" />
-								{hotel.location}
-							</p>
-							<p className="flex items-center text-gray-700 text-sm mb-2">
-								<ThumbUpIcon className="text-blue-400 mr-2" />
-								{hotel.rating}
-							</p>
 							<div className="flex items-center text-gray-700 text-sm mb-2">
-								<ServicesList />
+										<LocationOnOutlinedIcon className="text-blue-500 mr-2" />
+										<p>{hotel.location}</p>
+									</div>
+							<div className="flex items-center text-gray-700 text-sm mb-2">
+										<ThumbUpIcon className="text-blue-400 mr-2" />
+										<p>{hotel.rating}</p>
+									</div>
+							<div className="flex items-center text-gray-700 text-sm mb-2">
+							<p>
+											<ServicesList />
+										</p>
 							</div>
 						</div>
 						<div className="flex justify-end mt-4">
@@ -95,7 +97,7 @@ function App() {
 
 	return (
 		<div>
-				<h2 className="font-bold text-2xl mb-4">Hotels in Barcelona</h2>
+			<h2 className="font-bold text-2xl mb-4">Hotels in Barcelona</h2>
 			<HotelsList onAddToTrip={addToTrip} />
 			<h2>My Trip</h2>
 			{myTrip.map((hotel, index) => (
