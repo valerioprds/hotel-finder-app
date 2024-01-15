@@ -10,14 +10,9 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 // Buttons
 import Button from "@mui/material/Button";
 
-// Snackbar for Popup Message
-import Snackbar from "@mui/material/Snackbar";
-import MuiAlert from "@mui/material/Alert";
-
 export default function HotelsList() {
 	const [hotels, setHotels] = useState([]);
 	const [cart, setCart] = useState([]);
-	const [openSnackbar, setOpenSnackbar] = useState(false); // State for managing popup
 
 	useEffect(() => {
 		fetch("http://api.egruppa.com/accommodations/search")
@@ -58,18 +53,16 @@ export default function HotelsList() {
 	}, []);
 
 	const addToCart = (hotel) => {
-		const newCart = [...cart, hotel];
-		setCart(newCart);
-		setOpenSnackbar(true); // Show the popup
-		console.log('llamando funcion addtocar')
-	};
+		const hotelData = {
+			name: hotel.name,
+			location: hotel.location,
+			category: hotel.category,
+			rating: hotel.rating,
+		};
 
-	const handleCloseSnackbar = (event, reason) => {
-		if (reason === "clickaway") {
-			return;
-		}
-		console.log('cerrando snackbar')
-		setOpenSnackbar(false);
+		const updatedCart = [...cart, hotelData];
+		setCart(updatedCart);
+		console.log(updatedCart);
 	};
 
 	return (
@@ -117,9 +110,9 @@ export default function HotelsList() {
 										className="hotelAddButton"
 										variant="outlined"
 										size="large"
-										onClick={() => addToCart(hotel)}
+										
 									>
-										Add to My Trip
+										add to my trip
 									</Button>
 								</div>
 							</div>
@@ -127,24 +120,6 @@ export default function HotelsList() {
 					))}
 				</div>
 			</div>
-
-			{/* Snackbar for popup message */}
-			<Snackbar
-				open={openSnackbar}
-				autoHideDuration={3000} // Popup disappears after 3 seconds
-				onClose={handleCloseSnackbar}
-				anchorOrigin={{ vertical: "top", horizontal: "center" }}
-			>
-				<MuiAlert
-					elevation={6}
-					variant="filled"
-					onClose={handleCloseSnackbar}
-					severity="success"
-					sx={{ width: "100%" }}
-				>
-					Hotel added to trip successfully!
-				</MuiAlert>
-			</Snackbar>
 		</div>
 	);
 }
