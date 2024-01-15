@@ -56,7 +56,7 @@ export default function Home() {
 									From 99 Euros
 								</small>
 								<Link href="/barcelona" legacyBehavior>
-									<a className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+									<a className="bg-blue-500 text-center text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
 										Check Availability
 									</a>
 								</Link>
@@ -90,7 +90,7 @@ export default function Home() {
 									From 120 Euros
 								</small>
 								<Link href="/madrid" legacyBehavior>
-									<a className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+									<a className="bg-blue-500 text-center text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
 										Check Availability
 									</a>
 								</Link>
@@ -124,7 +124,7 @@ export default function Home() {
 									From 89 Euros
 								</small>
 								<Link href="/torremolinos" legacyBehavior>
-									<a className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors text-center">
+									<a className="bg-blue-500 text-center text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors text-center">
 										Check Availability
 									</a>
 								</Link>
