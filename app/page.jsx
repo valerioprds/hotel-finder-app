@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
 	return (
-		<main className="p-4 bg-gray-100 sm:p-6 md:p-8 lg:p-10 xl:p-12">
+		<main className="p-4 m-8 bg-gray-100 sm:p-6 md:p-8 lg:p-10 xl:p-12">
 			<h2 className="text-3xl font-semibold text-center text-gray-800 mb-6 sm:text-4xl md:mb-8">
 				Discover Spain&apos;s Wonders with Our Tailor-Made Travel
 				Packages!
