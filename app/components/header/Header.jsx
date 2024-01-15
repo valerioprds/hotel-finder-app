@@ -115,19 +115,21 @@ const Header = () => {
 							Home
 						</Link>
 					</li>
-					<li class="group max-lg:border-b max-lg:py-2 relative">
+					<li class="group max-lg:border-b max-lg:py-2 relative hover:text-[#ffb700] lg:hover:fill-[#ffb700]">
 						<a
 							className={styles.linksStyle}
 							href="javascript:void(0)"
-							class="hover:text-[#ffb700]  font-bold lg:hover:fill-[#ffb700] block"
+							class="hover:text-[#ffb700]  font-bold lg:hover:fill-[#ffb700] block "
 						>
 							Check Our Destinations
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="16px"
 								height="16px"
-								class="ml-1 inline-block"
+								class="ml-1 inline-block arrow-down "
 								viewBox="0 0 24 24"
+								
+								
 							>
 								<path
 									d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
