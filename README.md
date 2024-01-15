@@ -1,34 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hotel App - Discover Spain's Wonders
+
+![Discover Spain](/public/spain.jpg)
+
+Welcome to the **Hotel App**, where you can explore tailor-made travel packages and discover the wonders of Spain! This Next. js-based web application showcases the beauty of Spain's diverse cultures, historic landmarks, and stunning landscapes.
+
+## Table of Contents
+
+- [About](#about)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## About
+
+Dive into an unforgettable journey through Spain, a land of vibrant cultures, historic splendours, and breathtaking landscapes. From the artistic streets of Barcelona to the grandeur of Madrid's palaces, Spain offers an array of experiences for every traveller. Immerse yourself in the rich tapestry of Spanish life. Marvel at the architectural wonders that dot the skyline, indulge in the culinary delights that Spain is famed for and soak in the sun on picturesque beaches. **Book with us now and embark on your dream Spanish adventure!**
+
+![Barcelona](/public/sagrada.jpeg)
+
+## Technologies Used
+
+This project utilizes the following technologies:
+
+- Next.js
+- React
+- Tailwind CSS
+- Emotion
+- JSON Server
+
+Make sure to check the `package.json` file for a complete list of dependencies.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the Hotel App, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install the project dependencies using `npm install`.
+4. Start the Next.js development server with `npm run dev`.
+5. Start the JSON Server with `json-server --watch --port 4000 ./_data/db.json`.
+6. `npm run build` to build the application and then `npm start` 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Once the application is running, you can access it in your browser at [http://localhost:3000](http://localhost:3000).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Explore the various travel packages offered, including:
 
-## Learn More
+1. **Visit Barcelona**
+   - Uncover Barcelona's charm with Gaudí's masterpieces, vibrant culture, gastronomic delights, and picturesque streets!
+   - Starting from 99 Euros.
 
-To learn more about Next.js, take a look at the following resources:
+![Barcelona](/public/sagrada.jpeg)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Visit Madrid**
+   - Dive into Madrid's Splendor: Immerse in Rich Art, Historic Palaces, Bustling Markets, and Exquisite Spanish Gastronomy!
+   - Starting from 120 Euros.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Madrid](/public/madrid.jpeg)
 
-## Deploy on Vercel
+3. **Visit Torremolinos**
+   - Experience Torremolinos: Breathtaking Beaches, Lively Promenades, Traditional Andalusian Cuisine, and Enchanting Cultural Festivities!
+   - Starting from 89 Euros.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Torremolinos](/public/torremolinos.jpg)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+
+We welcome contributions! If you would like to improve the Hotel App or add new features, please feel free to submit a pull request. For major changes, please open an issue first to discuss your ideas.
+
+
