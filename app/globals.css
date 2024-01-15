@@ -70,14 +70,14 @@ p > a {
 }
 
 .hotelAddButton {
-	background-color: #003b95;
-	color: white;
-	transition: background-color 0.3s ease;
+	background-color: #003b95 !important;
+	color: white !important;
+	transition: background-color 0.3s ease !important;
 }
 
 .hotelAddButton:hover {
-	background-color: #ffb700;
-	border: none;
+	background-color: #ffb700 !important;
+	border: none !important;
 }
 
 
