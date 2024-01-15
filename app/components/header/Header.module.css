@@ -5,22 +5,42 @@
 	width: 100%;
 }
 
-
-
-.linksStyle{
+.linksStyle {
 	color: white;
 	font-size: 24px;
 }
 
-.linksStyle:hover{
-	color:#ffb700;
+.linksStyle:hover {
+	color: #ffb700;
 	font-size: 24px;
 }
 
+.image-wrapper {
+	position: relative;
+	width: 100px; 
+	height: 50px; 
+}
 
+/* Smaller tablets (landscape) */
+@media (max-width: 768px) {
+	.image-wrapper {
+		width: 80px;
+		height: 40px;
+	}
+}
 
+/* Tablets (portrait) and large smartphones */
+@media (max-width: 600px) {
+	.image-wrapper {
+		width: 60px;
+		height: 30px;
+	}
+}
 
-
-
-
-
+/* Smaller smartphones */
+@media (max-width: 480px) {
+	.image-wrapper {
+		width: 40px;
+		height: 20px;
+	}
+}

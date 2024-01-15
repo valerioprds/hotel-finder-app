@@ -26,17 +26,19 @@ const Header = () => {
 	};
 	return (
 		<header className={styles.header}>
-			<div class="flex flex-wrap items-center justify-between px-10 py-3 gap-4 relative">
-				<Link href="/">
-					<Image
-						src="/logo4.png"
-						alt="Logo"
-						width={100}
-						height={50}
-						layout="fixed"
-					/>
+			<div className="flex flex-col lg:flex-row items-center justify-between px-10 py-3 gap-4">
+				<Link href="/" legacyBehavior>
+					<a className="mx-auto lg:mx-0">
+						<Image
+							src="/logo4.png"
+							alt="Logo"
+							width={100}
+							height={50}
+							layout="fixed"
+						/>
+					</a>
 				</Link>
-				<div class="flex items-center max-lg:ml-auto lg:order-1">
+				<div class="flex items-center lg:order-1">
 					<span class="relative">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -128,8 +130,6 @@ const Header = () => {
 								height="16px"
 								class="ml-1 inline-block arrow-down "
 								viewBox="0 0 24 24"
-								
-								
 							>
 								<path
 									d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
