@@ -1,36 +1,38 @@
 import RoomServiceIcon from "@mui/icons-material/RoomService";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import accommodationsData from "../../_data/db.json";
 
 async function getServices() {
-	const res = await fetch("http://localhost:4000/accommodations");
-
-	return res.json();
+	// Simula una llamada asincrónica
+	return new Promise((resolve) => {
+		setTimeout(() => resolve(accommodationsData), 1000);
+	});
 }
+
 export default async function servicesList() {
-	const accommodations = await getServices();
+	const data = await getServices();
 
 	return (
 		<>
-			{accommodations.map((accommodations) => (
+			{data.accommodations.map((accommodation) => (
 				<>
 					<div
-						key={accommodations.services}
+						key={accommodation.id}
 						className="flex items-center text-gray-700 text-sm mb-2"
 					>
 						<RoomServiceIcon className="text-blue-400 mr-2 mb-1" />
-						<p>{accommodations.services}</p>
+						<p>{accommodation.services.join(", ")}</p>
 					</div>
 					<div
-						key={accommodations.price}
+						key={accommodation.id}
 						className="flex items-center text-gray-700 text-sm mb-2"
 					>
-						{" "}
 						<AttachMoneyIcon
 							className="mr-1"
 							style={{ fontSize: "25px", fontWeight: "bold" }}
 						/>
 						<p style={{ fontSize: "25px", fontWeight: "bold" }}>
-							{accommodations.price}
+							{accommodation.price}
 						</p>
 					</div>
 				</>

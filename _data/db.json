@@ -4,12 +4,12 @@
 			"id": 59,
 			"price": 150,
 			"services": [
-				"Free Wi-Fi, ",
-				"Swimming Pool, ",
-				"Gym, ",
-				"Restaurant, ",
-				"Room Service, ",
-				"Spa "
+				"Free Wi-Fi",
+				"Swimming Pool",
+				"Gym",
+				"Restaurant",
+				"Room Service",
+				"Spa"
 			]
 		}
 	]
