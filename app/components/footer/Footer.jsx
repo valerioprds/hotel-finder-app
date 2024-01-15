@@ -5,7 +5,7 @@ import React from "react";
 export default function Footer() {
 	return (
 		<footer
-			className={`${styles.footer} bg-white rounded-lg shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-800 antialiased`}
+			className={`${styles.footer} bg-white  shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-800 antialiased`}
 		>
 			<p class="mb-4 text-sm text-center text-white dark:text-gray-400 sm:mb-0">
 				&copy; 2019-2024{" "}
